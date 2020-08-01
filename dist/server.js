@@ -6,9 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var path_1 = __importDefault(require("path"));
 var app = express_1.default();
-app.use(express_1.default.static(__dirname + '/public'));
+app.use(express_1.default.static(path_1.default.resolve('./public')));
 app.get('/', function (request, response) {
-    response.sendFile(path_1.default.join(__dirname + '/public/index.html'));
+    var file = path_1.default.resolve('./public/index.html');
+    response.sendFile(file);
 });
 var port = 3333;
 app.listen(port, function () {

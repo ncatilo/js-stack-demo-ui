@@ -3,11 +3,13 @@ import path from 'path'
 
 const app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.resolve('./public')));
 
 app.get('/', (request, response) => {
 
-    response.sendFile(path.join(__dirname + '/public/index.html'));
+    const file = path.resolve('./public/index.html')
+
+    response.sendFile(file);
 });
 
 var port = 3333
