@@ -8,8 +8,8 @@ $(function () {
 
             html.find(".process-btn").on('click', function () {
 
-                var btn = $(this),
-                    id = btn.closest("li").data("id");
+                var btn = $(this)
+                var id = btn.closest("li").data("id");
 
                 socketIO.send("process-job", {
                     collection: "jobs",
