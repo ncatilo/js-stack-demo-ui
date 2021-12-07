@@ -2,7 +2,7 @@
 
 ## Local development set-up
 
-1.  Clone the **Javascript Stack Demo - Web API** from https://gitlab.com/Creologist/reference/js-stack-demo-webapi.git onto your local machine.  Ensure it is up and running at http://localhost:3000/api
+1.  Clone the **Javascript Stack Demo - Web API** from https://github.com/ncatilo/js-stack-demo-ui.git onto your local machine.  Ensure it is up and running at http://localhost:3000/api
 
 2.  Execute the following terminal command lines to build and launch the UI.
 
